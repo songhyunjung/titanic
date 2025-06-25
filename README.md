@@ -71,8 +71,8 @@
 ### 4.4. 모델 최적화 및 최종 예측
 
 * **하이퍼파라미터 튜닝:** `GridSearchCV`를 사용하여 `n_estimators`, `learning_rate`, `max_depth`에 대한 최적의 조합 탐색
-    * **최적 파라미터:** (예시: `{'learning_rate': 0.05, 'max_depth': 5, 'n_estimators': 200}`)
-    * **최고 교차 검증 정확도:** (예시: `0.82xx`)
+    * **최적 파라미터:** {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 300}
+    * **최고 교차 검증 정확도:** `0.8351`
 * **최종 예측:** 최적화된 XGBoost 모델로 전처리된 `test.csv` 데이터에 대한 생존 여부 예측 수행
 * **제출 파일 생성:** Kaggle 제출 형식(`PassengerId`, `Survived`)에 맞춰 `submission.csv` 파일 생성
 
